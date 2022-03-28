@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {
+  --clr-blue: #15ADE0;
+  --clr-light-blue: #7ADEFF;
+  --clr-red: #E71140;
+  --clr-light-red: #FF7D99;
+  --clr-green: #06D6A0;
+  --clr-light-green: #6EFFD8;
+  --clr-dark-green: #048B67;
+  --clr-yellow: #FFAD1F;
+  --clr-light-yellow: #FFD68F;
+  --clr-background: #040F25;
+  --clr-text: #fff;
+
+  --game-dimension: 26rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bungee', cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  height: max-content;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.game {
+  position: relative;
+  width: var(--game-dimension);
+  height: var(--game-dimension);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.game__pad {
+  width: calc(var(--game-dimension)/2);
+  height: calc(var(--game-dimension)/2);
+  border: 5px solid var(--clr-background);
+}
+
+.game__pad-green {
+  background-color: var(--clr-green);
+  border-top-left-radius: 100%;
+}
+
+.game__pad-green.active {
+  background-color: var(--clr-light-green);
+  background: radial-gradient(circle, var(--clr-light-green) 0%, var(--clr-green) 60%);
+}
+
+.game__pad-red {
+  background-color: var(--clr-red);
+  border-top-right-radius: 100%;
+}
+
+.game__pad-red.active {
+  background-color: var(--clr-light-red);
+  background: radial-gradient(circle, var(--clr-light-red) 0%, var(--clr-red) 60%);
+}
+
+.game__pad-yellow {
+  background-color: var(--clr-yellow);
+  border-bottom-left-radius: 100%;
+}
+
+.game__pad-yellow.active {
+  background-color: var(--clr-light-yellow);
+  background: radial-gradient(circle, var(--clr-light-yellow) 0%, var(--clr-yellow) 60%);
+}
+
+.game__pad-blue {
+  background-color: var(--clr-blue);
+  border-bottom-right-radius: 100%;
+}
+
+.game__pad-blue.active {
+  background-color: var(--clr-light-blue);
+  background: radial-gradient(circle, var(--clr-light-blue) 0%, var(--clr-blue) 60%);
+}
+
+.game__center {
+  position: absolute;
+  top: calc(var(--game-dimension)/4);
+  left: calc(var(--game-dimension)/4);
+
+  width: calc(var(--game-dimension)/2);
+  height: calc(var(--game-dimension)/2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--clr-background);
+  border-radius: 100%;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.game__center-score {
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 475px) {
+  html {
+    font-size: 80%;
+  }
+}
+
