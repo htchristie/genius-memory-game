@@ -8,6 +8,12 @@ Esse é um remake do jogo de memória Genius, sugerido pela plataforma de estudo
 
 ## Meu processo
 
+### Funcionalidades adicionais
+- Botão para dar início ao jogo
+- Som distinto para cada cor
+- Mecânica para tocar novamente a sequência de cores caso o jogador não interaja com o jogo dentro de 5 segundos
+- Placar de rodadas
+
 ### Construído com:
 - HTML semântico
 - Propriedades personalizadas do CSS
@@ -16,7 +22,7 @@ Esse é um remake do jogo de memória Genius, sugerido pela plataforma de estudo
 - Event Listeners
 - setTimeout(), setInterval()
 
-### Referências
+## Referências
 - <a href="https://developer.mozilla.org/pt-BR/">MDN Web Docs</a>
 - <a href="https://www.youtube.com/watch?v=iPI-exnefBo&list=PL28O_hEAqjAtOPTlRHkHrhfmct_USCGfI">Inkasa Dev (Youtube)</a>
 
