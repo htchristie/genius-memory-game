@@ -16,7 +16,7 @@ Remake do jogo de memória Genius, sugerido pela plataforma de estudos <a href="
 
 ### Construído com:
 - HTML semântico
-- Propriedades personalizadas do CSS
+- Variáveis CSS
 - Metodologia BEM
 - Métodos de Array JS
 - Event Listeners
