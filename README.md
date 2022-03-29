@@ -1,5 +1,5 @@
 # Genius Memory Game
-Esse é um remake do jogo de memória Genius, sugerido pela plataforma de estudos <a href="https://www.dio.me/">Dio._</a>
+Remake do jogo de memória Genius, sugerido pela plataforma de estudos <a href="https://www.dio.me/">Dio._</a>
 
 ## Screenshot
 
